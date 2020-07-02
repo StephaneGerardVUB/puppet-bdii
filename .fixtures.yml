@@ -4,7 +4,6 @@ fixtures:
   repositories:
     "stdlib": "https://github.com/puppetlabs/puppetlabs-stdlib"
     "firewall": "https://github.com/puppetlabs/puppetlabs-firewall"
-    "concat": "https://github.com/puppetlabs/puppetlabs-concat"
   symlinks:
     "bdii": "#{source_dir}"
 
