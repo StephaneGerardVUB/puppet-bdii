@@ -22,7 +22,7 @@ class bdii::config (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    notify  => Class['bdii::service'],
+    notify  => Service['bdii'],
   }
 
   file { '/etc/bdii/bdii.conf':
@@ -30,7 +30,7 @@ class bdii::config (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    notify  => Class['bdii::service'],
+    notify  => Service['bdii'],
   }
 
   file { '/etc/bdii/gip':
@@ -52,6 +52,6 @@ class bdii::config (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    notify  => Class['bdii::service'],
+    notify  => Service['bdii'],
   }
 }

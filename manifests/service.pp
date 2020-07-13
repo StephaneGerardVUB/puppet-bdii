@@ -4,6 +4,5 @@ class bdii::service {
     enable     => true,
     hasstatus  => true,
     hasrestart => true,
-    require    => Class['bdii::config'],
   }
 }

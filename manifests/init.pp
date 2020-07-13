@@ -18,12 +18,12 @@ class bdii (
 ) inherits ::bdii::params {
 
   contain ::bdii::install
-  contain ::bdii::service
   if $firewall {
     contain ::bdii::firewall
     Class['::bdii::firewall'] -> Class['::bdii::config']
   }
   contain ::bdii::config
+  contain ::bdii::service
 
   Class['::bdii::install']
   -> Class['::bdii::config']

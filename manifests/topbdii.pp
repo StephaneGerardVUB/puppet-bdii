@@ -49,7 +49,7 @@ class bdii::topbdii (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    notify  => Class['bdii::service'],
+    notify  => Service['bdii'],
   }
 }
 
